@@ -28,6 +28,15 @@
 - (IBAction)LoginButton:(id)sender {
 
 }
+- (IBAction)RoseStemButton:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://rosestem.rose-hulman.edu/"]];
+}
+
+- (IBAction)GoogleMapButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://mapsengine.google.com/map/u/0/edit?mid=zRBarr6eawLk.kMs2XUUHErnM"]];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -27,6 +27,9 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="RoseStemButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vfu-Mf-3fn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-J1-IMc">
                                 <rect key="frame" x="83" y="396" width="38" height="30"/>
@@ -69,12 +72,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="35"/>
+            <point key="canvasLocation" x="417" y="-479"/>
+        </scene>
+        <!--View Controller - Alumni Affairs Contact-->
+        <scene sceneID="5jE-u3-wJy">
+            <objects>
+                <viewController id="SRz-Lk-bOA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Q7-OJ-rJE"/>
+                        <viewControllerLayoutGuide type="bottom" id="byf-7x-lvu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AUN-lF-Ddu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RH-AA.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F6y-0g-SHf">
+                                <rect key="frame" x="0.0" y="62" width="320" height="144"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-zV-Igc">
+                                <rect key="frame" x="40" y="214" width="240" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">5500 Wabash Avenue
+Terre Haute, IN 47803
+
+Phone: 812-877-8976
+
+alumniaffairs@rose-hulman.edu
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alumni Affairs Contact" id="lAV-Ln-5Ku"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6LZ-RH-a5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="152"/>
         </scene>
         <!--View Controller - Rose Perks-->
         <scene sceneID="HNT-vk-cdj">
             <objects>
-                <viewController id="WsS-nN-ASa" sceneMemberID="viewController">
+                <viewController id="WsS-nN-ASa" customClass="RHViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7NJ-f7-ztq"/>
                         <viewControllerLayoutGuide type="bottom" id="QfZ-tk-5a2"/>
@@ -106,6 +149,9 @@
                                 <state key="normal" title="Alumni Affairs Contact">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SRz-Lk-bOA" kind="push" id="m7a-9g-Thb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvI-zu-MQX">
                                 <rect key="frame" x="52" y="321" width="217" height="30"/>
@@ -113,6 +159,9 @@
                                 <state key="normal" title="Google Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="GoogleMapButton:" destination="WsS-nN-ASa" eventType="touchUpInside" id="Exw-b5-Nc7"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Official Rose-Hulman Red &amp; White.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-nB-GHy">
                                 <rect key="frame" x="-10" y="71" width="330" height="128"/>
@@ -122,10 +171,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rose Perks" id="1JA-Ju-iNB"/>
+                    <connections>
+                        <outlet property="GoogleMapButton" destination="zvI-zu-MQX" id="ZXx-MO-TcZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcL-Jd-MlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="35"/>
+            <point key="canvasLocation" x="781" y="-479"/>
         </scene>
         <!--View Controller - Category-->
         <scene sceneID="jVs-Ru-Izf">
@@ -188,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCR-YF-a9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="35"/>
+            <point key="canvasLocation" x="1144" y="-479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="syU-Lf-mEE">
@@ -206,7 +258,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-Ho-x04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="13"/>
+            <point key="canvasLocation" x="-192" y="-501"/>
         </scene>
     </scenes>
     <resources>
@@ -217,6 +269,7 @@
         <image name="129300-simple-red-square-icon-people-things-bed1-sc43.png" width="256" height="256"/>
         <image name="129867-simple-red-square-icon-symbols-shapes-comment-bubbles.png" width="256" height="256"/>
         <image name="Official Rose-Hulman Red &amp; White.jpg" width="635" height="120"/>
+        <image name="RH-AA.jpg" width="1219" height="355"/>
         <image name="background_not_complete.jpg" width="591" height="624"/>
         <image name="imgres.jpg" width="275" height="183"/>
     </resources>
