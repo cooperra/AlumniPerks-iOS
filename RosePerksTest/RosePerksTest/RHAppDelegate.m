@@ -7,11 +7,35 @@
 //
 
 #import "RHAppDelegate.h"
+#import "Parser.h"
+
 
 @implementation RHAppDelegate
+@synthesize ListArray;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
+//    NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
+//    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
+//    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
+    
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"PerksList.xml"];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
+    
+    Parser *theParser = [[Parser alloc] initParser];
+    [xmlParser setDelegate:theParser];
+    
+    BOOL worked = [xmlParser parse];
+    if(worked) {
+        NSLog(@"Amount %i",[ListArray count]);
+    }
+    else{
+        NSLog(@"boo");
+    }
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

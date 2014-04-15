@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<companyList>
+<company id="1">
+<name>Asics</name>
+<category>store</category>
+<location>Location: Through Alumni Affairs</location>
+<number>(812) 877-8359</number>
+<discount>20% of Asics footwear</discount>
+</company>
+<company id="2">
+<name>AVIS</name>
+<category>other</category>
+<location>2629 S. 3rd Street Terre Haute, IN 47802</location>
+<number>(812) 238-9963</number>
+<discount>Discounts on various car rentals</discount>
+</company>
+</companyList>

@@ -11,5 +11,6 @@
 @interface RHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSMutableArray *ListArray;
 
 @end
