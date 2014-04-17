@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSMutableArray *ListArray;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end

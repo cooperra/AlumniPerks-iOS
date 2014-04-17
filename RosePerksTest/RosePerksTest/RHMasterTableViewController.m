@@ -8,6 +8,8 @@
 
 #import "RHMasterTableViewController.h"
 
+#import "RHDetailViewController.h"
+
 @interface RHMasterTableViewController ()
 
 @end
@@ -17,17 +19,18 @@
 @synthesize detailViewController = _detailViewController;
 @synthesize theList;
 
-- (id)initWithStyle:(UITableViewStyle)style
+/*- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
+    NSLog(@"Viewdidload");
     [super viewDidLoad];
     app = [[UIApplication sharedApplication] delegate];
     [self.tableView reloadData];
@@ -76,6 +79,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"CELLFORROWATINDEXPATH");
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil){
@@ -85,7 +89,11 @@
     }
     
     theList = [app.ListArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = theList.name;
+    //NSString *finalText = [[theList.name componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                          //componentsJoinedByString:@""];
+
+    cell.textLabel.text = [theList.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -140,5 +148,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

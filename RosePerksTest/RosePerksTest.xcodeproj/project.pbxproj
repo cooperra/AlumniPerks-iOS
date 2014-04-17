@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */; };
+		0A9511A018FF947500876157 /* RHMasterTableViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71D18FCAE1200524084 /* RHMasterTableViewController.h */; };
 		510C90F318DB6B0E00AEDDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F218DB6B0E00AEDDE4 /* Foundation.framework */; };
 		510C90F518DB6B0E00AEDDE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F418DB6B0E00AEDDE4 /* CoreGraphics.framework */; };
 		510C90F718DB6B0E00AEDDE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F618DB6B0E00AEDDE4 /* UIKit.framework */; };
@@ -293,6 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9511A018FF947500876157 /* RHMasterTableViewController.h in Resources */,
+				0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */,
 				51BE329418DBCC5800C4678E /* 129867-simple-red-square-icon-symbols-shapes-comment-bubbles.png in Resources */,
 				51BE329618DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png in Resources */,
 				51BE329218DBCC5800C4678E /* 129091-simple-red-square-icon-food-beverage-knife-fork2.png in Resources */,
@@ -460,7 +464,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -473,7 +479,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

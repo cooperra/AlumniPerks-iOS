@@ -8,10 +8,13 @@
 
 #import "RHAppDelegate.h"
 #import "Parser.h"
+#import "RHMasterTableViewController.h"
 
 
 @implementation RHAppDelegate
 @synthesize ListArray;
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,8 +23,12 @@
 //    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
 //    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
-    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"PerksList.xml"];
-    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSString *path = @"/Users/csse/Desktop/PerksList.xml";
+    NSString *standardizedPath = [path stringByStandardizingPath];
+    // standardizedPath: /usr/include
+    
+    //NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/Users/csse/Desktop/PerksList.xml"];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
     Parser *theParser = [[Parser alloc] initParser];
@@ -35,6 +42,21 @@
         NSLog(@"boo");
     }
     
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSLog(@"one");
+    //RHMasterTableViewController *masterViewController = [[RHMasterTableViewController alloc] initWithNibName:@"RHMasterTableViewController" bundle:nil];
+    
+   // UIStoryboard*  sb = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"Main.storyboard"] bundle:[NSBundle mainBundle]];
+                                                  
+   // RHMasterTableViewController* masterViewController = [sb instantiateViewControllerWithIdentifier                                                    :@"RHMasterTableViewController"];
+    
+    NSLog(@"two");
+    //self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    NSLog(@"three");
+    //self.window.rootViewController = self.navigationController;
+    NSLog(@"four");
+    //[self.window makeKeyAndVisible];
+    NSLog(@"five");
     
     // Override point for customization after application launch.
     return YES;
