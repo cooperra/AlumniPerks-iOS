@@ -9,6 +9,7 @@
 #import "RHMasterTableViewController.h"
 
 #import "RHDetailViewController.h"
+#import "RHUIImageResizing.h"
 
 @interface RHMasterTableViewController ()
 
@@ -91,14 +92,52 @@
     theList = [app.ListArray objectAtIndex:indexPath.row];
     //NSString *finalText = [[theList.name componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
                           //componentsJoinedByString:@""];
-
-    cell.textLabel.text = [theList.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
+    
+    /*UIFont *arialFont = [UIFont fontWithName:@"arial" size:18.0];
+     NSDictionary *arialDict = [NSDictionary dictionaryWithObject: arialFont forKey:NSFontAttributeName];        NSAttributedString *fontsDisplay = [[NSMutableAttributedString alloc] initWithString:@"" attributes: arialDict];  */NSString *companyName =[theList.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *location =[theList.location stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *phone =[theList.number stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *discount =[theList.discount stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    NSString *display =[NSString stringWithFormat:@"%@%@%@%@%@%@", @"\n", location, @"\n", phone, @"\n", discount];
+    
+    
+    
+    UIFont *arialFont = [UIFont fontWithName:@"Arial-BoldMT" size:12.0];
+    NSDictionary *arialDict = [NSDictionary dictionaryWithObject: arialFont forKey:NSFontAttributeName];
+    NSMutableAttributedString *aAttrString = [[NSMutableAttributedString alloc] initWithString:companyName attributes: arialDict];
+    
+    UIFont *VerdanaFont = [UIFont fontWithName:@"verdana" size:6.0];
+    NSDictionary *verdanaDict = [NSDictionary dictionaryWithObject:VerdanaFont forKey:NSFontAttributeName];
+    NSMutableAttributedString *vAttrString = [[NSMutableAttributedString alloc]initWithString: display attributes:verdanaDict];
+    [vAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:(NSMakeRange(0, 5))];
+    
+    [aAttrString appendAttributedString:vAttrString];
+    
+    
+    
+    
+    cell.textLabel.attributedText = aAttrString;
+    //cell.textLabel.font = [UIFont systemFontOfSize:6];
+    cell.textLabel.numberOfLines = 7;
+    NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
+    NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
+    UIImage *pic = [UIImage imageNamed: imageName];
+    UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];
+    cell.imageView.image = smallImage;
+    cell.imageView.frame = CGRectMake(cell.imageView.frame.origin.x, cell.imageView.frame.origin.y,50,50);
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
 
+//Change the Height of the Cell [Default is 44]:
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    return 60;
+}
 
 /*
 // Override to support conditional editing of the table view.
