@@ -34,6 +34,7 @@
     NSLog(@"Viewdidload");
     [super viewDidLoad];
     app = [[UIApplication sharedApplication] delegate];
+    self.allPerksList = theList;
     [self.tableView reloadData];
 }
 
@@ -46,6 +47,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -73,14 +75,45 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    self.indexPathMap = [NSMutableDictionary dictionary];
     // Return the number of rows in the section.
-    return [app.ListArray count];
+    self.objectivecateg = [RHCategory getInstance];
+    self.counter = 0;
+    int n = 0;
+    List *currElement;
+    for(int i=0; i<[app.ListArray count]; i++){
+        currElement =[app.ListArray objectAtIndex:i];
+        NSString *thisPerksCategory =[currElement.category stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        if(![self.objectivecateg.currentCategory isEqualToString:@""]){
+            if([thisPerksCategory isEqualToString:self.objectivecateg.currentCategory]){
+                n++;
+            }
+        }
+        else{
+            return [app.ListArray count];
+        }
+        
+    }
+    return n;
+}
+
+
+- (List*)newElement:(NSUInteger)counter{
+   // if(counter < [app.ListArray count]){
+        List* wtf =[app.ListArray objectAtIndex:counter];
+        NSString *companyName =[wtf.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSLog(@"Grabbing new element: %d, the business: %@", counter, companyName);
+        return wtf;
+    //}
+    //return nil;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"CELLFORROWATINDEXPATH");
+    //self.counter = (NSUInteger) indexPath.row;
+    NSLog(@"Starting over again counter: %d", self.counter);
+    NSLog(@"Starting over again indexPath: %d", indexPath.row);
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil){
@@ -88,8 +121,43 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
     }
-    
-    theList = [app.ListArray objectAtIndex:indexPath.row];
+    //theList= self.allPerksList;
+    RHCategory *currCat = [RHCategory getInstance];
+    if(self.counter < [app.ListArray count]){
+        theList = [app.ListArray objectAtIndex:self.counter];
+    }
+    else{
+        currCat.currentCategory = @"";
+        NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+        NSString *value = self.indexPathMap[key];
+        NSInteger numberValue = [value integerValue];
+        NSLog(@"\nINTERCEPTION: %d\n", numberValue);
+        theList = [app.ListArray objectAtIndex:numberValue];
+    }
+    NSString *thisPerksCategory =[theList.category stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if(![currCat.currentCategory isEqualToString:@""]){
+        while(![thisPerksCategory isEqualToString:currCat.currentCategory]){
+            self.counter++;
+            if(self.counter < [app.ListArray count]){
+                theList = [self newElement:self.counter];
+                thisPerksCategory =[theList.category stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            }
+            else{
+                NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+                NSString *value = self.indexPathMap[key];
+                NSInteger numberValue = [value integerValue];
+                NSLog(@"\nINTERCEPTION: %d\n", numberValue);
+                theList = [app.ListArray objectAtIndex:numberValue];
+                break;
+            }
+        }
+    }
+    if(self.counter < [app.ListArray count]){
+        NSString *one =[ NSString stringWithFormat:@"%d", self.counter];
+        NSString *two = [NSString stringWithFormat:@"%d", indexPath.row];
+        //[self.indexPathMap setObject:one forKey:two];
+        self.indexPathMap[two] = one;
+    }
     //NSString *finalText = [[theList.name componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
                           //componentsJoinedByString:@""];
     
@@ -117,7 +185,7 @@
     
     
     
-    
+    //cell.textLabel.text = @"hi";
     cell.textLabel.attributedText = aAttrString;
     //cell.textLabel.font = [UIFont systemFontOfSize:6];
     cell.textLabel.numberOfLines = 7;
@@ -129,7 +197,7 @@
     cell.imageView.image = smallImage;
     cell.imageView.frame = CGRectMake(cell.imageView.frame.origin.x, cell.imageView.frame.origin.y,50,50);
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+    self.counter++;
     return cell;
 }
 

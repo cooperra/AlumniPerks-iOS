@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "RHAppDelegate.h"
 #import "List.h"
+#import "RHCategory.h"
+
 
 @class RHDetailViewController;
 
@@ -18,7 +20,11 @@
 @property (strong,nonatomic) RHDetailViewController *detailViewController;
 @property (nonatomic,retain) RHAppDelegate *app;
 @property (nonatomic,retain) List *theList;
-
+@property (nonatomic,retain) List *allPerksList;
+@property (nonatomic,retain) RHCategory *objectivecateg;
+@property (nonatomic) NSUInteger counter;
+@property (nonatomic) NSMutableDictionary *indexPathMap;
+- (List*)newElement:(NSUInteger)counter;
 
 
 
