@@ -23,7 +23,7 @@
 //    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
 //    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
-    NSString *path = @"/Users/huangz/Desktop/PerksList.xml";
+    NSString *path = @"/Users/huangz/Desktop/AlumniPerks-iOS/PerksList.xml";
     NSString *standardizedPath = [path stringByStandardizingPath];
     // standardizedPath: /usr/include
     

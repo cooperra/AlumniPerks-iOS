@@ -175,7 +175,7 @@ alumniaffairs@rose-hulman.edu
             </objects>
             <point key="canvasLocation" x="1130" y="152"/>
         </scene>
-        <!--View Controller - Rose Perks-->
+        <!--View Controller - RH Perks-->
         <scene sceneID="HNT-vk-cdj">
             <objects>
                 <viewController id="WsS-nN-ASa" customClass="RHViewController" sceneMemberID="viewController">
@@ -227,14 +227,14 @@ alumniaffairs@rose-hulman.edu
                                     <action selector="GoogleMapButton:" destination="WsS-nN-ASa" eventType="touchUpInside" id="Exw-b5-Nc7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Official Rose-Hulman Red &amp; White.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-nB-GHy">
-                                <rect key="frame" x="-10" y="71" width="330" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosehulmanlogo (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2lf-KH-1y8">
+                                <rect key="frame" x="0.0" y="88" width="320" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Rose Perks" id="1JA-Ju-iNB"/>
+                    <navigationItem key="navigationItem" title="RH Perks" id="1JA-Ju-iNB"/>
                     <connections>
                         <outlet property="GoogleMapButton" destination="zvI-zu-MQX" id="ZXx-MO-TcZ"/>
                     </connections>
@@ -261,6 +261,10 @@ alumniaffairs@rose-hulman.edu
                                 <state key="normal" backgroundImage="129091-simple-red-square-icon-food-beverage-knife-fork2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="FoodButton:" destination="8km-yA-4Hi" eventType="touchUpInside" id="MAo-WD-vqj"/>
+                                    <segue destination="9jm-DI-mam" kind="push" id="LQw-QG-5Bw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="Hotel" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRE-nb-7ln">
                                 <rect key="frame" x="20" y="69" width="121" height="123"/>
@@ -279,6 +283,10 @@ alumniaffairs@rose-hulman.edu
                                 <state key="normal" backgroundImage="128579-simple-red-square-icon-business-dollar-solid.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="BankingButton:" destination="8km-yA-4Hi" eventType="touchUpInside" id="AhS-Kg-ZfD"/>
+                                    <segue destination="9jm-DI-mam" kind="push" id="mJa-0N-28G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-lT-TV6">
                                 <rect key="frame" x="20" y="309" width="121" height="123"/>
@@ -286,6 +294,10 @@ alumniaffairs@rose-hulman.edu
                                 <state key="normal" backgroundImage="128520-simple-red-square-icon-business-cart-7dots.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="StoreButton:" destination="8km-yA-4Hi" eventType="touchUpInside" id="Aql-R5-AE6"/>
+                                    <segue destination="9jm-DI-mam" kind="push" id="TRm-91-kaL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9by-Eg-77o">
                                 <rect key="frame" x="179" y="309" width="121" height="123"/>
@@ -293,6 +305,10 @@ alumniaffairs@rose-hulman.edu
                                 <state key="normal" backgroundImage="category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OtherButton:" destination="8km-yA-4Hi" eventType="touchUpInside" id="CMF-80-4OY"/>
+                                    <segue destination="9jm-DI-mam" kind="push" id="lfs-lW-MsL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -327,11 +343,11 @@ alumniaffairs@rose-hulman.edu
         <image name="128579-simple-red-square-icon-business-dollar-solid.png" width="256" height="256"/>
         <image name="129091-simple-red-square-icon-food-beverage-knife-fork2.png" width="256" height="256"/>
         <image name="129300-simple-red-square-icon-people-things-bed1-sc43.png" width="256" height="256"/>
-        <image name="Official Rose-Hulman Red &amp; White.jpg" width="635" height="120"/>
         <image name="RH-AA.jpg" width="1219" height="355"/>
         <image name="background_not_complete.jpg" width="591" height="624"/>
         <image name="category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png" width="512" height="512"/>
         <image name="imgres.jpg" width="275" height="183"/>
+        <image name="rosehulmanlogo (1).jpg" width="635" height="120"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

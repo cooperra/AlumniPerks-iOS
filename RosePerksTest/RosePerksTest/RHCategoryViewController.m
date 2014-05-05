@@ -37,4 +37,24 @@
     Hotelobj.currentCategory = @"hotel";
     
 }
+
+- (IBAction)FoodButton:(id)sender {
+    RHCategory *Foodobj = [RHCategory getInstance];
+    Foodobj.currentCategory = @"restaurant";
+}
+
+- (IBAction)StoreButton:(id)sender {
+    RHCategory *Storeobj = [RHCategory getInstance];
+    Storeobj.currentCategory = @"store";
+}
+
+- (IBAction)BankingButton:(id)sender {
+    RHCategory *Bankingobj = [RHCategory getInstance];
+    Bankingobj.currentCategory = @"banking";
+}
+
+- (IBAction)OtherButton:(id)sender {
+    RHCategory *Otherobj = [RHCategory getInstance];
+    Otherobj.currentCategory = @"other";
+}
 @end
