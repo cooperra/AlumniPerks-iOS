@@ -75,7 +75,7 @@
             url = [[NSURL alloc]initWithString:midString];
             data2 = [[NSData alloc]initWithContentsOfURL:url];
             tempImage = [UIImage imageWithData:data2];
-            //numID = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", numID];
+            numID = [NSString stringWithFormat:@"/Users/huangz/Desktop/%@", numID];
             [UIImageJPEGRepresentation(tempImage, 1.0) writeToFile:numID atomically:YES];
             //[data2 writeToFile:@"numID" atomically:true];
         }

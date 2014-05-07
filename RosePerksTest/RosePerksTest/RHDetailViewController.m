@@ -5,6 +5,7 @@
 //  Created by HUANG ZIYANG on 4/14/14.
 //  Copyright (c) 2014 Rose-Hulman. All rights reserved.
 //
+#import "RHUIImageResizing.h"
 
 #import "RHDetailViewController.h"
 
@@ -26,8 +27,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    LogoView.image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%d%@", theList.CompanyID, @".jpg"]];
+    NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
+    NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
+    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    NSLog(@"%@\n\n\n", imageName);
+    UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
+    UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];
+    LogoView.image = smallImage;
+    LogoView.frame = CGRectMake(LogoView.frame.origin.x, LogoView.frame.origin.y,50,50);
+//    LogoView.image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%d%@", theList.CompanyID, @".jpg"]];
 
     self.title = theList.name;
     LocationField.text = theList.location;
