@@ -309,7 +309,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RHDetailViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailView"];
-    theList = [app.ListArray objectAtIndex:indexPath.row];
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+    NSString *value = self.indexPathMap[key];
+    NSInteger numberValue = [value integerValue];
+    theList = [app.ListArray objectAtIndex:numberValue];
     detailView.theList = theList;
 
 

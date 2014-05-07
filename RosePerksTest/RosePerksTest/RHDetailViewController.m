@@ -31,11 +31,16 @@
     LocationField.text = theList.location;
     NumberField.text = theList.number;
     DiscountField.text = theList.discount;
-    CouponField.text = theList.coupon;
-    WebsiteField.text = theList.website;
-    NSLog(@"hello");
-    NSLog(NameField.text);
-    NSLog(LocationField.text);
+    NSString *coupon =[theList.coupon stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if ([coupon length] ==0)
+    {
+        self->CouponBut.hidden = YES;
+    }
+    NSString *website =[theList.website stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if ([website length] ==0)
+    {
+        self->DetailBut.hidden = YES;
+    }
 
 }
 
@@ -71,4 +76,19 @@
 }
 */
 
+- (IBAction)CouponButton:(id)sender {
+    NSString *coupon =[theList.coupon stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:coupon]];
+    
+}
+
+- (IBAction)MoreDetailButton:(id)sender {
+    NSString *website =[theList.website stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+        
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:website]];
+
+}
 @end
