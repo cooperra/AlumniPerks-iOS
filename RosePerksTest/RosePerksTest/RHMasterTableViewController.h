@@ -23,9 +23,11 @@
 @property (nonatomic,retain) List *allPerksList;
 @property (nonatomic,retain) RHCategory *objectivecateg;
 @property (nonatomic) NSUInteger counter;
+@property (nonatomic) NSUInteger fakeIndexPath;
+@property (nonatomic) NSUInteger size;
 @property (nonatomic) NSMutableDictionary *indexPathMap;
 - (List*)newElement:(NSUInteger)counter;
-
+- (void)populateMap:(NSInteger) size;
 
 
 @end
