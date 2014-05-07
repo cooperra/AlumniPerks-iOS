@@ -10,9 +10,11 @@
 
 @interface RHDetailViewController ()
 
+
 @end
 
 @implementation RHDetailViewController
+@synthesize theList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = theList.name;
+    _NameField.text = theList.name;
+    _CategoryField.text = theList.category;
+    _LocationField.text = theList.location;
+    _NumberField.text = theList.number;
+    _DiscountField.text = theList.discount;
+    _CouponField.text = theList.coupon;
+    _WebsiteField.text = theList.website;
 }
 
 - (void)didReceiveMemoryWarning

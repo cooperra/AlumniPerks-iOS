@@ -244,16 +244,14 @@
 }
 */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    RHDetailViewController *detailView = [[RHDetailViewController alloc]init];
+    theList = [app.ListArray objectAtIndex:indexPath.row];
+    detailView.theList = theList;
+//    [self.navigationController pushViewController:detailView animated:YES];
+
 }
-*/
 
 
 @end

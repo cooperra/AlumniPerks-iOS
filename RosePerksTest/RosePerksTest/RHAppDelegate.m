@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
+
     NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
     NSData *data = [[NSData alloc]initWithContentsOfURL:url];
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
