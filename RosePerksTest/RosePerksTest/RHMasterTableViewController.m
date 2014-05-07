@@ -82,6 +82,7 @@
     // Return the number of rows in the section.
     self.objectivecateg = [RHCategory getInstance];
     self.counter = 0;
+    self.fakeIndexPath = 0;
     int n = 0;
     List *currElement;
     for(int i=0; i<[app.ListArray count]; i++){
@@ -93,13 +94,46 @@
             }
         }
         else{
-            return [app.ListArray count];
+            n = [app.ListArray count];
+            break;
         }
         
     }
+    self.size = n;
+    [self populateMap: n];
     return n;
 }
 
+-(void)populateMap:(NSInteger) size{
+    for(self.fakeIndexPath = 0; self.fakeIndexPath < self.size; self.fakeIndexPath++){
+        RHCategory *currCat = [RHCategory getInstance];
+        theList = [app.ListArray objectAtIndex:self.counter];
+        NSString *thisPerksCategory =[theList.category stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        if(![currCat.currentCategory isEqualToString:@""]){
+            while(![thisPerksCategory isEqualToString:currCat.currentCategory]){
+                self.counter++;
+                if(self.counter < [app.ListArray count]){
+                    theList = [self newElement:self.counter];
+                    thisPerksCategory =[theList.category stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                }
+                else{
+                    NSLog(@"Error");
+                }
+            }
+        }
+    
+        
+        if(self.counter < [app.ListArray count]){
+            NSString *one =[ NSString stringWithFormat:@"%d", self.counter];
+            NSString *two = [NSString stringWithFormat:@"%d", self.fakeIndexPath];
+            self.indexPathMap[two] = one;
+        }
+        else{
+            NSLog(@"Error");
+        }
+        self.counter++;
+    }
+}
 
 - (List*)newElement:(NSUInteger)counter{
    // if(counter < [app.ListArray count]){
@@ -114,20 +148,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //self.counter = (NSUInteger) indexPath.row;3啦
-    NSLog(@"Starting over again counter: %d", self.counter);
-    NSLog(@"Starting over again indexPath: %d", indexPath.row);
+    //self.counter = (NSUInteger) indexPath.row;
+    //NSLog(@"Starting over again counter: %d", self.counter);
+    //NSLog(@"Starting over again indexPath: %d", indexPath.row);
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
-    }
+    }/*
     //theList= self.allPerksList;
     RHCategory *currCat = [RHCategory getInstance];
     if(self.counter < [app.ListArray count]){
-        theList = [app.ListArray objectAtIndex:self.counter];
+        //bug fix
+        if([currCat.currentCategory isEqualToString:@""]){
+            self.counter = indexPath.row;
+        }
+            theList = [app.ListArray objectAtIndex:self.counter];
     }
     else{
         NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
@@ -158,14 +196,35 @@
         NSString *one =[ NSString stringWithFormat:@"%d", self.counter];
         NSString *two = [NSString stringWithFormat:@"%d", indexPath.row];
         //[self.indexPathMap setObject:one forKey:two];
-        self.indexPathMap[two] = one;
-    }
+        NSString *curr = [self.indexPathMap objectForKey:two];
+        NSLog(@"%@\n", curr);
+        if([curr length] == 0){
+            self.indexPathMap[two] = one;
+        }*/
+        /*else{
+            NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+            NSString *value = self.indexPathMap[key];
+            NSInteger numberValue = [value integerValue];
+            NSLog(@"\nINTERCEPTION: %d\n", numberValue);
+            theList = [app.ListArray objectAtIndex:numberValue];
+        }*/
+    //}
     //NSString *finalText = [[theList.name componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
                           //componentsJoinedByString:@""];
     
     
     /*UIFont *arialFont = [UIFont fontWithName:@"arial" size:18.0];
-     NSDictionary *arialDict = [NSDictionary dictionaryWithObject: arialFont forKey:NSFontAttributeName];        NSAttributedString *fontsDisplay = [[NSMutableAttributedString alloc] initWithString:@"" attributes: arialDict];  */NSString *companyName =[theList.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+     NSDictionary *arialDict = [NSDictionary dictionaryWithObject: arialFont forKey:NSFontAttributeName];        NSAttributedString *fontsDisplay = [[NSMutableAttributedString alloc] initWithString:@"" attributes: arialDict];  */
+    
+    
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+    NSString *value = self.indexPathMap[key];
+    NSInteger numberValue = [value integerValue];
+    NSLog(@"\nINTERCEPTION: %d\n", numberValue);
+    theList = [app.ListArray objectAtIndex:numberValue];
+    
+    
+    NSString *companyName =[theList.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *location =[theList.location stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *phone =[theList.number stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *discount =[theList.discount stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
