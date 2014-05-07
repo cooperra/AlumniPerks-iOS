@@ -11,6 +11,9 @@
 #import "RHDetailViewController.h"
 #import "RHUIImageResizing.h"
 
+#define kNoteDetailSeque @"NoteDetailSeque"
+
+
 @interface RHMasterTableViewController ()
 
 @end
@@ -307,10 +310,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    RHDetailViewController *detailView = [[RHDetailViewController alloc]init];
-    theList = [app.ListArray objectAtIndex:indexPath.row];
+    RHDetailViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailView"];
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+    NSString *value = self.indexPathMap[key];
+    NSInteger numberValue = [value integerValue];
+    theList = [app.ListArray objectAtIndex:numberValue];
     detailView.theList = theList;
-//    [self.navigationController pushViewController:detailView animated:YES];
+
+
+    [self.navigationController pushViewController:detailView animated:YES];
 
 }
 
