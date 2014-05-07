@@ -111,7 +111,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //self.counter = (NSUInteger) indexPath.row;3啦
+    //self.counter = (NSUInteger) indexPath.row;
     NSLog(@"Starting over again counter: %d", self.counter);
     NSLog(@"Starting over again indexPath: %d", indexPath.row);
     static NSString *CellIdentifier = @"Cell";
@@ -124,7 +124,10 @@
     //theList= self.allPerksList;
     RHCategory *currCat = [RHCategory getInstance];
     if(self.counter < [app.ListArray count]){
-        theList = [app.ListArray objectAtIndex:self.counter];
+        if([currCat.currentCategory isEqualToString:@""]){
+            self.counter = indexPath.row;
+        }
+            theList = [app.ListArray objectAtIndex:self.counter];
     }
     else{
         NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];

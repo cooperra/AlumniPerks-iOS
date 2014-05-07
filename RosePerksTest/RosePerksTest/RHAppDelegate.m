@@ -22,7 +22,22 @@
 
     NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
     NSData *data = [[NSData alloc]initWithContentsOfURL:url];
+    if([data length] == 0){
+        NSString *path = @"PerksList.xml";
+        NSString *standardizedPath = [path stringByStandardizingPath];
+        data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
+        if([data length] == 0){
+            UIAlertView* alert;
+            alert = [[UIAlertView alloc] initWithTitle:@"Alert!" message:@"The Rose Hulman Alumni Perks App needs access to internet on its initial boot up to populate the perks list. After this initial population this App will perform without internet." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+    }
+    else{
+        [data writeToFile:@"PerksList.xml" atomically:true];
+    }
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
+    
+    
     
 //    NSString *path = @"/Users/huangz/Desktop/AlumniPerks-iOS/PerksList.xml";
 //    NSString *standardizedPath = [path stringByStandardizingPath];
