@@ -111,7 +111,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //self.counter = (NSUInteger) indexPath.row;
+    //self.counter = (NSUInteger) indexPath.row;3啦
     NSLog(@"Starting over again counter: %d", self.counter);
     NSLog(@"Starting over again indexPath: %d", indexPath.row);
     static NSString *CellIdentifier = @"Cell";
@@ -127,7 +127,6 @@
         theList = [app.ListArray objectAtIndex:self.counter];
     }
     else{
-        currCat.currentCategory = @"";
         NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
         NSString *value = self.indexPathMap[key];
         NSInteger numberValue = [value integerValue];

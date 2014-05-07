@@ -19,17 +19,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
-//    NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
-//    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
-//    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
+    NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
+    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
-    NSString *path = @"/Users/huangz/Desktop/AlumniPerks-iOS/PerksList.xml";
-    NSString *standardizedPath = [path stringByStandardizingPath];
+//    NSString *path = @"/Users/huangz/Desktop/AlumniPerks-iOS/PerksList.xml";
+//    NSString *standardizedPath = [path stringByStandardizingPath];
     // standardizedPath: /usr/include
     
     //NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/Users/csse/Desktop/PerksList.xml"];
-    NSData *data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
+//    NSData *data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
+//    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
     Parser *theParser = [[Parser alloc] initParser];
     [xmlParser setDelegate:theParser];

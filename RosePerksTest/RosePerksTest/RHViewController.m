@@ -44,4 +44,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)PerksListButton:(id)sender {
+    RHCategory *obj = [RHCategory getInstance];
+    obj.currentCategory = @"";
+    
+}
 @end

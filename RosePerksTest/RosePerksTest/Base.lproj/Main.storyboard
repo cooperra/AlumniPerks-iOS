@@ -204,6 +204,7 @@ alumniaffairs@rose-hulman.edu
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="PerksListButton:" destination="WsS-nN-ASa" eventType="touchUpInside" id="AR4-l0-2zt"/>
                                     <segue destination="9jm-DI-mam" kind="push" id="bfg-mI-A0p"/>
                                 </connections>
                             </button>
