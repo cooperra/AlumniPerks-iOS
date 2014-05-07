@@ -11,7 +11,7 @@
 
 @interface RHDetailViewController : UIViewController{
     
- IBOutlet UILabel *NameField;
+    __weak IBOutlet UIImageView *LogoView;
  IBOutlet UILabel *LocationField;
  IBOutlet UILabel *NumberField;
  IBOutlet UILabel *DiscountField;

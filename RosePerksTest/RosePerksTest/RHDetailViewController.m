@@ -26,11 +26,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    LogoView.image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%d%@", theList.CompanyID, @".jpg"]];
+
     self.title = theList.name;
-    NameField.text = theList.name;
     LocationField.text = theList.location;
     NumberField.text = theList.number;
     DiscountField.text = theList.discount;
+    
+    
+    LocationField.textAlignment = NSTextAlignmentCenter;
+    NumberField.textAlignment =NSTextAlignmentCenter;
+    DiscountField.textAlignment = NSTextAlignmentCenter;
+
+    
+    
     NSString *coupon =[theList.coupon stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if ([coupon length] ==0)
     {
