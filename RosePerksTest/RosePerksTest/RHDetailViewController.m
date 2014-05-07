@@ -8,43 +8,58 @@
 
 #import "RHDetailViewController.h"
 
-@interface RHDetailViewController ()
-
-
-@end
+//@interface RHDetailViewController ()
 
 @implementation RHDetailViewController
 @synthesize theList;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+//
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = theList.name;
-    _NameField.text = theList.name;
-    _CategoryField.text = theList.category;
-    _LocationField.text = theList.location;
-    _NumberField.text = theList.number;
-    _DiscountField.text = theList.discount;
-    _CouponField.text = theList.coupon;
-    _WebsiteField.text = theList.website;
+    NameField.text = theList.name;
+    LocationField.text = theList.location;
+    NumberField.text = theList.number;
+    DiscountField.text = theList.discount;
+    CouponField.text = theList.coupon;
+    WebsiteField.text = theList.website;
+    NSLog(@"hello");
+    NSLog(NameField.text);
+    NSLog(LocationField.text);
+
 }
 
-- (void)didReceiveMemoryWarning
+
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+
+-(void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+}
 /*
 #pragma mark - Navigation
 
