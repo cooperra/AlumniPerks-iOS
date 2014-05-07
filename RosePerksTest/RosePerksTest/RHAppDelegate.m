@@ -20,9 +20,11 @@
 {
 //    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
 
-    NSURL *url = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
-    NSData *data = [[NSData alloc]initWithContentsOfURL:url];
+    NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
+    //NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/images"];
+    NSData *data = [[NSData alloc]initWithContentsOfURL:urlXML];
     if([data length] == 0){
+        self.offline = true;
         NSString *path = @"PerksList.xml";
         NSString *standardizedPath = [path stringByStandardizingPath];
         data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
@@ -33,6 +35,7 @@
         }
     }
     else{
+        self.offline = false;
         [data writeToFile:@"PerksList.xml" atomically:true];
     }
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
@@ -56,6 +59,26 @@
     }
     else{
         NSLog(@"boo");
+    }
+    List * temp;
+    NSURL *url;
+    NSData *data2;
+    NSString *midString;
+    NSString *numID;
+    UIImage *tempImage;
+    if(!self.offline){
+        for(int i = 0; i < [ListArray count]; i++){
+            temp = (List*) ListArray[i];
+            NSLog(@"%d", temp.CompanyID);
+            numID =[NSString stringWithFormat:@"%d%@", temp.CompanyID, @".jpg"];
+            midString = [NSString stringWithFormat:@"http://alumniperks.csse.rose-hulman.edu/images/%@", numID];
+            url = [[NSURL alloc]initWithString:midString];
+            data2 = [[NSData alloc]initWithContentsOfURL:url];
+            tempImage = [UIImage imageWithData:data2];
+            //numID = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", numID];
+            [UIImageJPEGRepresentation(tempImage, 1.0) writeToFile:numID atomically:YES];
+            //[data2 writeToFile:@"numID" atomically:true];
+        }
     }
     
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

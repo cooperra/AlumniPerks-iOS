@@ -250,7 +250,9 @@
     NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
-    UIImage *pic = [UIImage imageNamed: imageName];
+    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    NSLog(@"%@\n\n\n", imageName);
+    UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
     UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];
     cell.imageView.image = smallImage;
     cell.imageView.frame = CGRectMake(cell.imageView.frame.origin.x, cell.imageView.frame.origin.y,50,50);
