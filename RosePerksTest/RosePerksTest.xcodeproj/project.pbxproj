@@ -287,6 +287,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rose-Hulman";
 				TargetAttributes = {
+					510C90EE18DB6B0E00AEDDE4 = {
+						DevelopmentTeam = YD7M5CPHAE;
+					};
 					510C910F18DB6B0E00AEDDE4 = {
 						TestTargetID = 510C90EE18DB6B0E00AEDDE4;
 					};
@@ -487,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
@@ -502,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
