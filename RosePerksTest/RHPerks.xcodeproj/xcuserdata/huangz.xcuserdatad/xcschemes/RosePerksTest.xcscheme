@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
-               BuildableName = "RosePerksTest.app"
+               BuildableName = "RHPerks.app"
                BlueprintName = "RHPerks"
                ReferencedContainer = "container:RHPerks.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "510C910F18DB6B0E00AEDDE4"
-               BuildableName = "RosePerksTestTests.xctest"
+               BuildableName = "RHPerksTests.xctest"
                BlueprintName = "RHPerksTests"
                ReferencedContainer = "container:RHPerks.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
-            BuildableName = "RosePerksTest.app"
+            BuildableName = "RHPerks.app"
             BlueprintName = "RHPerks"
             ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
-            BuildableName = "RosePerksTest.app"
+            BuildableName = "RHPerks.app"
             BlueprintName = "RHPerks"
             ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
-            BuildableName = "RosePerksTest.app"
+            BuildableName = "RHPerks.app"
             BlueprintName = "RHPerks"
             ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>

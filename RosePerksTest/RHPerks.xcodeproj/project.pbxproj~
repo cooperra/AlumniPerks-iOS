@@ -19,30 +19,20 @@
 		510C910318DB6B0E00AEDDE4 /* RHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C910218DB6B0E00AEDDE4 /* RHAppDelegate.m */; };
 		510C910618DB6B0E00AEDDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510C910418DB6B0E00AEDDE4 /* Main.storyboard */; };
 		510C910918DB6B0E00AEDDE4 /* RHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C910818DB6B0E00AEDDE4 /* RHViewController.m */; };
-		510C910B18DB6B0E00AEDDE4 /* Rose Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C910A18DB6B0E00AEDDE4 /* Rose Logo.jpg */; };
+		510C910B18DB6B0E00AEDDE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510C910A18DB6B0E00AEDDE4 /* Images.xcassets */; };
 		510C911218DB6B0E00AEDDE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C911118DB6B0E00AEDDE4 /* XCTest.framework */; };
 		510C911318DB6B0E00AEDDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F218DB6B0E00AEDDE4 /* Foundation.framework */; };
 		510C911418DB6B0E00AEDDE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F618DB6B0E00AEDDE4 /* UIKit.framework */; };
 		510C911C18DB6B0E00AEDDE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 510C911A18DB6B0E00AEDDE4 /* InfoPlist.strings */; };
-		510C911E18DB6B0E00AEDDE4 /* RosePerks.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C911D18DB6B0E00AEDDE4 /* RosePerks.m */; };
+		510C911E18DB6B0E00AEDDE4 /* RosePerksTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C911D18DB6B0E00AEDDE4 /* RosePerksTestTests.m */; };
 		510C912818DB763600AEDDE4 /* imgres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C912718DB763600AEDDE4 /* imgres.jpg */; };
 		510C912A18DB7DE800AEDDE4 /* background_not_complete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C912918DB7DE800AEDDE4 /* background_not_complete.jpg */; };
 		512A138A18FC6508008DEE7D /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A138918FC6508008DEE7D /* List.m */; };
 		512A138D18FC66CA008DEE7D /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A138C18FC66CA008DEE7D /* Parser.m */; };
-		51358FC219241495006A3D2E /* apple-touch-icon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FB919241495006A3D2E /* apple-touch-icon-57x57.png */; };
-		51358FC319241495006A3D2E /* apple-touch-icon-72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBA19241495006A3D2E /* apple-touch-icon-72x72.png */; };
-		51358FC419241495006A3D2E /* apple-touch-icon-76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBB19241495006A3D2E /* apple-touch-icon-76x76.png */; };
-		51358FC519241495006A3D2E /* apple-touch-icon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBC19241495006A3D2E /* apple-touch-icon-114x114.png */; };
-		51358FC619241495006A3D2E /* apple-touch-icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBD19241495006A3D2E /* apple-touch-icon-120x120.png */; };
-		51358FC719241495006A3D2E /* apple-touch-icon-144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBE19241495006A3D2E /* apple-touch-icon-144x144.png */; };
-		51358FC819241495006A3D2E /* apple-touch-icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FBF19241495006A3D2E /* apple-touch-icon-152x152.png */; };
-		51358FC919241495006A3D2E /* apple-touch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51358FC019241495006A3D2E /* apple-touch-icon.png */; };
-		51358FCA19241495006A3D2E /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 51358FC119241495006A3D2E /* favicon.ico */; };
 		5154790E1923F02000ADF090 /* RHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5154790D1923F02000ADF090 /* RHLoginViewController.m */; };
 		51569D2B1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 51569D2A1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png */; };
 		51569D311916BE4000CD05BF /* RHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51569D301916BE4000CD05BF /* RHCategory.m */; };
 		51569D341916BF7900CD05BF /* RHCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51569D331916BF7900CD05BF /* RHCategoryViewController.m */; };
-		5180C4411924315A00C19404 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5180C4401924315A00C19404 /* Images.xcassets */; };
 		51B55F631917F23E0017DF6C /* rosehulmanlogo (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51B55F621917F23E0017DF6C /* rosehulmanlogo (1).jpg */; };
 		51BE328818DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51BE328518DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg */; };
 		51BE328918DBC4A000C4678E /* Official Rose-Hulman Red & White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51BE328618DBC4A000C4678E /* Official Rose-Hulman Red & White.jpg */; };
@@ -55,7 +45,6 @@
 		51BE329718DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BE329118DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png */; };
 		51EBB71F18FCAE1200524084 /* RHMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */; };
 		51EBB72218FCAF6E00524084 /* RHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EBB72118FCAF6E00524084 /* RHDetailViewController.m */; };
-		51F817841924133600594F16 /* Rose Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F817831924133600594F16 /* Rose Logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,41 +61,31 @@
 		0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png"; sourceTree = "<group>"; };
 		0A96463319118DF0006CF535 /* RHUIImageResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHUIImageResizing.h; sourceTree = "<group>"; };
 		0A96463419118DF0006CF535 /* RHUIImageResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHUIImageResizing.m; sourceTree = "<group>"; };
-		510C90EF18DB6B0E00AEDDE4 /* RHPerks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHPerks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		510C90EF18DB6B0E00AEDDE4 /* RosePerksTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosePerksTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510C90F218DB6B0E00AEDDE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		510C90F418DB6B0E00AEDDE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		510C90F618DB6B0E00AEDDE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		510C90FA18DB6B0E00AEDDE4 /* RHPerks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHPerks-Info.plist"; sourceTree = "<group>"; };
+		510C90FA18DB6B0E00AEDDE4 /* RosePerksTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RosePerksTest-Info.plist"; sourceTree = "<group>"; };
 		510C90FC18DB6B0E00AEDDE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		510C90FE18DB6B0E00AEDDE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		510C910018DB6B0E00AEDDE4 /* RHPerks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RHPerks-Prefix.pch"; sourceTree = "<group>"; };
+		510C910018DB6B0E00AEDDE4 /* RosePerksTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RosePerksTest-Prefix.pch"; sourceTree = "<group>"; };
 		510C910118DB6B0E00AEDDE4 /* RHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHAppDelegate.h; sourceTree = "<group>"; };
 		510C910218DB6B0E00AEDDE4 /* RHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHAppDelegate.m; sourceTree = "<group>"; };
 		510C910518DB6B0E00AEDDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		510C910718DB6B0E00AEDDE4 /* RHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHViewController.h; sourceTree = "<group>"; };
 		510C910818DB6B0E00AEDDE4 /* RHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHViewController.m; sourceTree = "<group>"; };
-		510C910A18DB6B0E00AEDDE4 /* Rose Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rose Logo.jpg"; sourceTree = "<group>"; };
-		510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHPerksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		510C910A18DB6B0E00AEDDE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		510C911018DB6B0E00AEDDE4 /* RosePerksTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosePerksTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		510C911118DB6B0E00AEDDE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		510C911918DB6B0E00AEDDE4 /* RHPerks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHPerks-Info.plist"; sourceTree = "<group>"; };
+		510C911918DB6B0E00AEDDE4 /* RosePerksTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RosePerksTestTests-Info.plist"; sourceTree = "<group>"; };
 		510C911B18DB6B0E00AEDDE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		510C911D18DB6B0E00AEDDE4 /* RosePerks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosePerks.m; sourceTree = "<group>"; };
+		510C911D18DB6B0E00AEDDE4 /* RosePerksTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosePerksTestTests.m; sourceTree = "<group>"; };
 		510C912718DB763600AEDDE4 /* imgres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgres.jpg; sourceTree = "<group>"; };
 		510C912918DB7DE800AEDDE4 /* background_not_complete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_not_complete.jpg; sourceTree = "<group>"; };
 		512A138818FC6508008DEE7D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		512A138918FC6508008DEE7D /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		512A138B18FC66CA008DEE7D /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		512A138C18FC66CA008DEE7D /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
-		51358FB919241495006A3D2E /* apple-touch-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-57x57.png"; sourceTree = "<group>"; };
-		51358FBA19241495006A3D2E /* apple-touch-icon-72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-72x72.png"; sourceTree = "<group>"; };
-		51358FBB19241495006A3D2E /* apple-touch-icon-76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-76x76.png"; sourceTree = "<group>"; };
-		51358FBC19241495006A3D2E /* apple-touch-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-114x114.png"; sourceTree = "<group>"; };
-		51358FBD19241495006A3D2E /* apple-touch-icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-120x120.png"; sourceTree = "<group>"; };
-		51358FBE19241495006A3D2E /* apple-touch-icon-144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-144x144.png"; sourceTree = "<group>"; };
-		51358FBF19241495006A3D2E /* apple-touch-icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-152x152.png"; sourceTree = "<group>"; };
-		51358FC019241495006A3D2E /* apple-touch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon.png"; sourceTree = "<group>"; };
-		51358FC119241495006A3D2E /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
-		51358FCB192414F6006A3D2E /* RosePerksTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RosePerksTest.entitlements; sourceTree = "<group>"; };
 		5154790C1923F02000ADF090 /* RHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLoginViewController.h; sourceTree = "<group>"; };
 		5154790D1923F02000ADF090 /* RHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLoginViewController.m; sourceTree = "<group>"; };
 		51569D2A1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png"; sourceTree = "<group>"; };
@@ -114,7 +93,6 @@
 		51569D301916BE4000CD05BF /* RHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCategory.m; sourceTree = "<group>"; };
 		51569D321916BF7900CD05BF /* RHCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCategoryViewController.h; sourceTree = "<group>"; };
 		51569D331916BF7900CD05BF /* RHCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCategoryViewController.m; sourceTree = "<group>"; };
-		5180C4401924315A00C19404 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RHPerks/Images.xcassets; sourceTree = "<group>"; };
 		51B55F621917F23E0017DF6C /* rosehulmanlogo (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rosehulmanlogo (1).jpg"; sourceTree = "<group>"; };
 		51BE328518DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Official Rose-Hulman Res-13.jpg"; sourceTree = "<group>"; };
 		51BE328618DBC4A000C4678E /* Official Rose-Hulman Red & White.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Official Rose-Hulman Red & White.jpg"; sourceTree = "<group>"; };
@@ -129,7 +107,6 @@
 		51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHMasterTableViewController.m; sourceTree = "<group>"; };
 		51EBB72018FCAF6E00524084 /* RHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHDetailViewController.h; sourceTree = "<group>"; };
 		51EBB72118FCAF6E00524084 /* RHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHDetailViewController.m; sourceTree = "<group>"; };
-		51F817831924133600594F16 /* Rose Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rose Logo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +136,6 @@
 		510C90E618DB6B0E00AEDDE4 = {
 			isa = PBXGroup;
 			children = (
-				5180C4401924315A00C19404 /* Images.xcassets */,
 				510C90F818DB6B0E00AEDDE4 /* RosePerksTest */,
 				510C911718DB6B0E00AEDDE4 /* RosePerksTestTests */,
 				510C90F118DB6B0E00AEDDE4 /* Frameworks */,
@@ -170,8 +146,8 @@
 		510C90F018DB6B0E00AEDDE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				510C90EF18DB6B0E00AEDDE4 /* RHPerks.app */,
-				510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */,
+				510C90EF18DB6B0E00AEDDE4 /* RosePerksTest.app */,
+				510C911018DB6B0E00AEDDE4 /* RosePerksTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,7 +166,6 @@
 		510C90F818DB6B0E00AEDDE4 /* RosePerksTest */ = {
 			isa = PBXGroup;
 			children = (
-				51358FCB192414F6006A3D2E /* RosePerksTest.entitlements */,
 				51569D321916BF7900CD05BF /* RHCategoryViewController.h */,
 				51569D331916BF7900CD05BF /* RHCategoryViewController.m */,
 				51569D2F1916BE4000CD05BF /* RHCategory.h */,
@@ -213,7 +188,7 @@
 				51EBB72018FCAF6E00524084 /* RHDetailViewController.h */,
 				51EBB72118FCAF6E00524084 /* RHDetailViewController.m */,
 				51BE328B18DBC4A900C4678E /* images */,
-				510C910A18DB6B0E00AEDDE4 /* Rose Logo.jpg */,
+				510C910A18DB6B0E00AEDDE4 /* Images.xcassets */,
 				510C90F918DB6B0E00AEDDE4 /* Supporting Files */,
 			);
 			path = RosePerksTest;
@@ -222,10 +197,10 @@
 		510C90F918DB6B0E00AEDDE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				510C90FA18DB6B0E00AEDDE4 /* RHPerks-Info.plist */,
+				510C90FA18DB6B0E00AEDDE4 /* RosePerksTest-Info.plist */,
 				510C90FB18DB6B0E00AEDDE4 /* InfoPlist.strings */,
 				510C90FE18DB6B0E00AEDDE4 /* main.m */,
-				510C910018DB6B0E00AEDDE4 /* RHPerks-Prefix.pch */,
+				510C910018DB6B0E00AEDDE4 /* RosePerksTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +208,7 @@
 		510C911718DB6B0E00AEDDE4 /* RosePerksTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				510C911D18DB6B0E00AEDDE4 /* RosePerks.m */,
+				510C911D18DB6B0E00AEDDE4 /* RosePerksTestTests.m */,
 				510C911818DB6B0E00AEDDE4 /* Supporting Files */,
 			);
 			path = RosePerksTestTests;
@@ -242,7 +217,7 @@
 		510C911818DB6B0E00AEDDE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				510C911918DB6B0E00AEDDE4 /* RHPerks-Info.plist */,
+				510C911918DB6B0E00AEDDE4 /* RosePerksTestTests-Info.plist */,
 				510C911A18DB6B0E00AEDDE4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -251,16 +226,6 @@
 		51BE328B18DBC4A900C4678E /* images */ = {
 			isa = PBXGroup;
 			children = (
-				51358FB919241495006A3D2E /* apple-touch-icon-57x57.png */,
-				51358FBA19241495006A3D2E /* apple-touch-icon-72x72.png */,
-				51358FBB19241495006A3D2E /* apple-touch-icon-76x76.png */,
-				51358FBC19241495006A3D2E /* apple-touch-icon-114x114.png */,
-				51358FBD19241495006A3D2E /* apple-touch-icon-120x120.png */,
-				51358FBE19241495006A3D2E /* apple-touch-icon-144x144.png */,
-				51358FBF19241495006A3D2E /* apple-touch-icon-152x152.png */,
-				51358FC019241495006A3D2E /* apple-touch-icon.png */,
-				51358FC119241495006A3D2E /* favicon.ico */,
-				51F817831924133600594F16 /* Rose Logo.jpg */,
 				51B55F621917F23E0017DF6C /* rosehulmanlogo (1).jpg */,
 				51569D2A1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png */,
 				51BE328C18DBCC5800C4678E /* 129091-simple-red-square-icon-food-beverage-knife-fork2.png */,
@@ -282,9 +247,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		510C90EE18DB6B0E00AEDDE4 /* RHPerks */ = {
+		510C90EE18DB6B0E00AEDDE4 /* RosePerksTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 510C912118DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerks" */;
+			buildConfigurationList = 510C912118DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RosePerksTest" */;
 			buildPhases = (
 				510C90EB18DB6B0E00AEDDE4 /* Sources */,
 				510C90EC18DB6B0E00AEDDE4 /* Frameworks */,
@@ -294,14 +259,14 @@
 			);
 			dependencies = (
 			);
-			name = RHPerks;
+			name = RosePerksTest;
 			productName = RosePerksTest;
-			productReference = 510C90EF18DB6B0E00AEDDE4 /* RHPerks.app */;
+			productReference = 510C90EF18DB6B0E00AEDDE4 /* RosePerksTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		510C910F18DB6B0E00AEDDE4 /* RHPerksTests */ = {
+		510C910F18DB6B0E00AEDDE4 /* RosePerksTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerksTests" */;
+			buildConfigurationList = 510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RosePerksTestTests" */;
 			buildPhases = (
 				510C910C18DB6B0E00AEDDE4 /* Sources */,
 				510C910D18DB6B0E00AEDDE4 /* Frameworks */,
@@ -312,9 +277,9 @@
 			dependencies = (
 				510C911618DB6B0E00AEDDE4 /* PBXTargetDependency */,
 			);
-			name = RHPerksTests;
+			name = RosePerksTestTests;
 			productName = RosePerksTestTests;
-			productReference = 510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */;
+			productReference = 510C911018DB6B0E00AEDDE4 /* RosePerksTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -329,21 +294,13 @@
 				TargetAttributes = {
 					510C90EE18DB6B0E00AEDDE4 = {
 						DevelopmentTeam = YD7M5CPHAE;
-						SystemCapabilities = {
-							com.apple.iCloud = {
-								enabled = 0;
-							};
-							com.apple.iOS = {
-								enabled = 0;
-							};
-						};
 					};
 					510C910F18DB6B0E00AEDDE4 = {
 						TestTargetID = 510C90EE18DB6B0E00AEDDE4;
 					};
 				};
 			};
-			buildConfigurationList = 510C90EA18DB6B0E00AEDDE4 /* Build configuration list for PBXProject "RHPerks" */;
+			buildConfigurationList = 510C90EA18DB6B0E00AEDDE4 /* Build configuration list for PBXProject "RosePerksTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -356,8 +313,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				510C90EE18DB6B0E00AEDDE4 /* RHPerks */,
-				510C910F18DB6B0E00AEDDE4 /* RHPerksTests */,
+				510C90EE18DB6B0E00AEDDE4 /* RosePerksTest */,
+				510C910F18DB6B0E00AEDDE4 /* RosePerksTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,31 +328,20 @@
 				0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */,
 				51BE329418DBCC5800C4678E /* 129867-simple-red-square-icon-symbols-shapes-comment-bubbles.png in Resources */,
 				51569D2B1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png in Resources */,
-				51358FC319241495006A3D2E /* apple-touch-icon-72x72.png in Resources */,
-				51358FC619241495006A3D2E /* apple-touch-icon-120x120.png in Resources */,
-				51358FC819241495006A3D2E /* apple-touch-icon-152x152.png in Resources */,
-				51358FC719241495006A3D2E /* apple-touch-icon-144x144.png in Resources */,
 				51BE329618DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png in Resources */,
 				51BE329218DBCC5800C4678E /* 129091-simple-red-square-icon-food-beverage-knife-fork2.png in Resources */,
 				51BE328918DBC4A000C4678E /* Official Rose-Hulman Red & White.jpg in Resources */,
-				51358FC519241495006A3D2E /* apple-touch-icon-114x114.png in Resources */,
 				51BE328A18DBC4A000C4678E /* RH-AA.jpg in Resources */,
 				510C912818DB763600AEDDE4 /* imgres.jpg in Resources */,
 				510C912A18DB7DE800AEDDE4 /* background_not_complete.jpg in Resources */,
-				510C910B18DB6B0E00AEDDE4 /* Rose Logo.jpg in Resources */,
+				510C910B18DB6B0E00AEDDE4 /* Images.xcassets in Resources */,
 				51BE329518DBCC5800C4678E /* 128520-simple-red-square-icon-business-cart-7dots.png in Resources */,
 				510C90FD18DB6B0E00AEDDE4 /* InfoPlist.strings in Resources */,
 				51BE329318DBCC5800C4678E /* 129300-simple-red-square-icon-people-things-bed1-sc43.png in Resources */,
-				51358FC919241495006A3D2E /* apple-touch-icon.png in Resources */,
 				51BE329718DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png in Resources */,
-				5180C4411924315A00C19404 /* Images.xcassets in Resources */,
 				51B55F631917F23E0017DF6C /* rosehulmanlogo (1).jpg in Resources */,
 				510C910618DB6B0E00AEDDE4 /* Main.storyboard in Resources */,
 				51BE328818DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg in Resources */,
-				51358FC219241495006A3D2E /* apple-touch-icon-57x57.png in Resources */,
-				51F817841924133600594F16 /* Rose Logo.jpg in Resources */,
-				51358FCA19241495006A3D2E /* favicon.ico in Resources */,
-				51358FC419241495006A3D2E /* apple-touch-icon-76x76.png in Resources */,
 				0A903FAF1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510C911E18DB6B0E00AEDDE4 /* RosePerks.m in Sources */,
+				510C911E18DB6B0E00AEDDE4 /* RosePerksTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +388,7 @@
 /* Begin PBXTargetDependency section */
 		510C911618DB6B0E00AEDDE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 510C90EE18DB6B0E00AEDDE4 /* RHPerks */;
+			target = 510C90EE18DB6B0E00AEDDE4 /* RosePerksTest */;
 			targetProxy = 510C911518DB6B0E00AEDDE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -550,13 +496,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rose Hulman (YD7M5CPHAE)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> b30726e52acdb1512524bc4abc7e16d0c5a0961a
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RosePerksTest/RHPerks-Prefix.pch";
-				INFOPLIST_FILE = "RosePerksTest/RHPerks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = RHPerks;
+				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
+				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -568,13 +517,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rose Hulman (YD7M5CPHAE)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> b30726e52acdb1512524bc4abc7e16d0c5a0961a
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RosePerksTest/RHPerks-Prefix.pch";
-				INFOPLIST_FILE = "RosePerksTest/RHPerks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = RHPerks;
+				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
+				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -596,8 +548,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RosePerksTestTests/RHPerksTests-Info.plist";
-				PRODUCT_NAME = RHPerksTests;
+				INFOPLIST_FILE = "RosePerksTestTests/RosePerksTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -614,8 +566,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
-				INFOPLIST_FILE = "RosePerksTestTests/RHPerksTests-Info.plist";
-				PRODUCT_NAME = RHPerksTests;
+				INFOPLIST_FILE = "RosePerksTestTests/RosePerksTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -624,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		510C90EA18DB6B0E00AEDDE4 /* Build configuration list for PBXProject "RHPerks" */ = {
+		510C90EA18DB6B0E00AEDDE4 /* Build configuration list for PBXProject "RosePerksTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				510C911F18DB6B0E00AEDDE4 /* Debug */,
@@ -633,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		510C912118DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerks" */ = {
+		510C912118DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RosePerksTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				510C912218DB6B0E00AEDDE4 /* Debug */,
@@ -642,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerksTests" */ = {
+		510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RosePerksTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				510C912518DB6B0E00AEDDE4 /* Debug */,
