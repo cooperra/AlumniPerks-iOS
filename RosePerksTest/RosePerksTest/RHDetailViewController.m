@@ -30,9 +30,14 @@
     NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
-    imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
-    imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    //imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
+    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    imageName = [documentsPath stringByAppendingPathComponent:imageName];
+    
     UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
 //    UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];
     LogoView.image = pic;
