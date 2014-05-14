@@ -26,6 +26,7 @@
     if([data length] == 0){
         self.offline = true;
         NSString *path = @"PerksList.xml";
+        //path = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", path];
         NSString *standardizedPath = [path stringByStandardizingPath];
         data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
         if([data length] == 0){
@@ -75,7 +76,7 @@
             url = [[NSURL alloc]initWithString:midString];
             data2 = [[NSData alloc]initWithContentsOfURL:url];
             tempImage = [UIImage imageWithData:data2];
-            numID = [NSString stringWithFormat:@"/Users/huangz/Desktop/%@", numID];
+            //numID = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", numID];
             [UIImageJPEGRepresentation(tempImage, 1.0) writeToFile:numID atomically:YES];
             //[data2 writeToFile:@"numID" atomically:true];
         }

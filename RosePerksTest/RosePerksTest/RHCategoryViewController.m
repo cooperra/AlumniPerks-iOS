@@ -50,7 +50,7 @@
 
 - (IBAction)BankingButton:(id)sender {
     RHCategory *Bankingobj = [RHCategory getInstance];
-    Bankingobj.currentCategory = @"banking";
+    Bankingobj.currentCategory = @"car";
 }
 
 - (IBAction)OtherButton:(id)sender {
