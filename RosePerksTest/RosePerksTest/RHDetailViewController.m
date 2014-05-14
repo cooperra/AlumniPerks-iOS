@@ -30,6 +30,7 @@
     NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
+    imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
     //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
     UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
