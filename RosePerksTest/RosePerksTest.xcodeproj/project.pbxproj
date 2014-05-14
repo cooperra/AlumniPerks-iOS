@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A903FAD1923DDE0007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A903FAC1923DDE0007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */; };
+		0A903FAF1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */; };
 		0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */; };
 		0A9511A018FF947500876157 /* RHMasterTableViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71D18FCAE1200524084 /* RHMasterTableViewController.h */; };
 		0A96463519118DF0006CF535 /* RHUIImageResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96463419118DF0006CF535 /* RHUIImageResizing.m */; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A903FAC1923DDE0007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png"; path = "../../../../../Downloads/129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png"; sourceTree = "<group>"; };
+		0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png"; sourceTree = "<group>"; };
 		0A96463319118DF0006CF535 /* RHUIImageResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHUIImageResizing.h; sourceTree = "<group>"; };
 		0A96463419118DF0006CF535 /* RHUIImageResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHUIImageResizing.m; sourceTree = "<group>"; };
 		510C90EF18DB6B0E00AEDDE4 /* RosePerksTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosePerksTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,7 +228,7 @@
 				51BE328E18DBCC5800C4678E /* 129867-simple-red-square-icon-symbols-shapes-comment-bubbles.png */,
 				51BE328F18DBCC5800C4678E /* 128520-simple-red-square-icon-business-cart-7dots.png */,
 				51BE329018DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png */,
-				0A903FAC1923DDE0007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */,
+				0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */,
 				51BE329118DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png */,
 				51BE328518DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg */,
 				51BE328618DBC4A000C4678E /* Official Rose-Hulman Red & White.jpg */,
@@ -334,7 +334,7 @@
 				51B55F631917F23E0017DF6C /* rosehulmanlogo (1).jpg in Resources */,
 				510C910618DB6B0E00AEDDE4 /* Main.storyboard in Resources */,
 				51BE328818DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg in Resources */,
-				0A903FAD1923DDE0007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */,
+				0A903FAF1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
