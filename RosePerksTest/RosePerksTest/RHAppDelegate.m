@@ -20,7 +20,7 @@
 {
 //    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
 
-    NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/companyList.xml"];
+    NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/perk_api/list_all"];
     //NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/images"];
     NSData *data = [[NSData alloc]initWithContentsOfURL:urlXML];
     if([data length] == 0){
