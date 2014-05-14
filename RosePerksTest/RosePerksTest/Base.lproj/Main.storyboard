@@ -113,7 +113,7 @@ alumniaffairs@rose-hulman.edu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LZ-RH-a5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="152"/>
+            <point key="canvasLocation" x="423" y="152"/>
         </scene>
         <!--Master Table View Controller-->
         <scene sceneID="AeI-bm-OKL">
