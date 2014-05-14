@@ -40,8 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="LoginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ipg-c8-gWU"/>
-                                    <segue destination="WsS-nN-ASa" kind="push" id="Mnv-Fp-mZG"/>
+                                    <action selector="LoginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lph-Z0-KJ1"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZD-AJ-Cqh">
@@ -125,7 +124,7 @@ alumniaffairs@rose-hulman.edu
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PerksCell" id="Db7-a2-ZQx">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Db7-a2-ZQx" id="CW3-z4-0Su">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -160,7 +159,7 @@ alumniaffairs@rose-hulman.edu
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="40" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="fKC-E4-bVs">
-                                <rect key="frame" x="20" y="203" width="255" height="68"/>
+                                <rect key="frame" x="33" y="203" width="255" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -168,17 +167,17 @@ alumniaffairs@rose-hulman.edu
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="40" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="fUB-Pe-gTj">
-                                <rect key="frame" x="20" y="336" width="255" height="90"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="40" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="fUB-Pe-gTj">
+                                <rect key="frame" x="20" y="314" width="280" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </label>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="40" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="kb4-s8-QYK">
-                                <rect key="frame" x="20" y="279" width="245" height="49"/>
+                                <rect key="frame" x="38" y="279" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -234,7 +233,7 @@ alumniaffairs@rose-hulman.edu
         <!--View Controller - RH Perks-->
         <scene sceneID="HNT-vk-cdj">
             <objects>
-                <viewController id="WsS-nN-ASa" customClass="RHViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="View" storyboardIdentifier="View" id="WsS-nN-ASa" customClass="RHViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7NJ-f7-ztq"/>
                         <viewControllerLayoutGuide type="bottom" id="QfZ-tk-5a2"/>

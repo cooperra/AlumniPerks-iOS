@@ -35,8 +35,16 @@
 }
 
 - (IBAction)LoginButton:(id)sender {
-    
-    
+    if ([self.PasswordTextField.text isEqualToString:@"hello"]){
+        NSLog(@"YES!");
+        {
+            RHLoginViewController *LoginView = [self.storyboard instantiateViewControllerWithIdentifier:@"View"];
+
+            [self.navigationController pushViewController:LoginView animated:YES];
+        }
+        
+    }
+    return;
     
 }
 

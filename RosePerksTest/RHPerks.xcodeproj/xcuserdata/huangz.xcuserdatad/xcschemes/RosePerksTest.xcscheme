@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
                BuildableName = "RosePerksTest.app"
-               BlueprintName = "RosePerksTest"
-               ReferencedContainer = "container:RosePerksTest.xcodeproj">
+               BlueprintName = "RHPerks"
+               ReferencedContainer = "container:RHPerks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "510C910F18DB6B0E00AEDDE4"
                BuildableName = "RosePerksTestTests.xctest"
-               BlueprintName = "RosePerksTestTests"
-               ReferencedContainer = "container:RosePerksTest.xcodeproj">
+               BlueprintName = "RHPerksTests"
+               ReferencedContainer = "container:RHPerks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
             BuildableName = "RosePerksTest.app"
-            BlueprintName = "RosePerksTest"
-            ReferencedContainer = "container:RosePerksTest.xcodeproj">
+            BlueprintName = "RHPerks"
+            ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
             BuildableName = "RosePerksTest.app"
-            BlueprintName = "RosePerksTest"
-            ReferencedContainer = "container:RosePerksTest.xcodeproj">
+            BlueprintName = "RHPerks"
+            ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "510C90EE18DB6B0E00AEDDE4"
             BuildableName = "RosePerksTest.app"
-            BlueprintName = "RosePerksTest"
-            ReferencedContainer = "container:RosePerksTest.xcodeproj">
+            BlueprintName = "RHPerks"
+            ReferencedContainer = "container:RHPerks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
