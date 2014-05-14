@@ -254,7 +254,11 @@
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
 
-    imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    imageName = [documentsPath stringByAppendingPathComponent:imageName];
+    
+    //imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
     //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
     UIImage *pic = [UIImage imageWithContentsOfFile: imageName];

@@ -31,7 +31,7 @@
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
     imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
-    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
     UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
 //    UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];

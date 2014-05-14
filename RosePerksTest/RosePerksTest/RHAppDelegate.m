@@ -77,7 +77,11 @@
             data2 = [[NSData alloc]initWithContentsOfURL:url];
             tempImage = [UIImage imageWithData:data2];
 
-            numID = [NSHomeDirectory() stringByAppendingPathComponent:numID];
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+            numID = [documentsPath stringByAppendingPathComponent:numID];
+            
+            //numID = [NSHomeDirectory() stringByAppendingPathComponent:numID];
             //numID = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", numID];
             [UIImageJPEGRepresentation(tempImage, 1.0) writeToFile:numID atomically:YES];
             //[data2 writeToFile:@"numID" atomically:true];
