@@ -29,6 +29,7 @@
 		510C912A18DB7DE800AEDDE4 /* background_not_complete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C912918DB7DE800AEDDE4 /* background_not_complete.jpg */; };
 		512A138A18FC6508008DEE7D /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A138918FC6508008DEE7D /* List.m */; };
 		512A138D18FC66CA008DEE7D /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A138C18FC66CA008DEE7D /* Parser.m */; };
+		5154790E1923F02000ADF090 /* RHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5154790D1923F02000ADF090 /* RHLoginViewController.m */; };
 		51569D2B1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 51569D2A1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png */; };
 		51569D311916BE4000CD05BF /* RHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51569D301916BE4000CD05BF /* RHCategory.m */; };
 		51569D341916BF7900CD05BF /* RHCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51569D331916BF7900CD05BF /* RHCategoryViewController.m */; };
@@ -85,6 +86,8 @@
 		512A138918FC6508008DEE7D /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		512A138B18FC66CA008DEE7D /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		512A138C18FC66CA008DEE7D /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		5154790C1923F02000ADF090 /* RHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLoginViewController.h; sourceTree = "<group>"; };
+		5154790D1923F02000ADF090 /* RHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLoginViewController.m; sourceTree = "<group>"; };
 		51569D2A1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png"; sourceTree = "<group>"; };
 		51569D2F1916BE4000CD05BF /* RHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCategory.h; sourceTree = "<group>"; };
 		51569D301916BE4000CD05BF /* RHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCategory.m; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				510C910418DB6B0E00AEDDE4 /* Main.storyboard */,
 				510C910718DB6B0E00AEDDE4 /* RHViewController.h */,
 				510C910818DB6B0E00AEDDE4 /* RHViewController.m */,
+				5154790C1923F02000ADF090 /* RHLoginViewController.h */,
+				5154790D1923F02000ADF090 /* RHLoginViewController.m */,
 				512A138818FC6508008DEE7D /* List.h */,
 				512A138918FC6508008DEE7D /* List.m */,
 				512A138B18FC66CA008DEE7D /* Parser.h */,
@@ -287,6 +292,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rose-Hulman";
 				TargetAttributes = {
+					510C90EE18DB6B0E00AEDDE4 = {
+						DevelopmentTeam = YD7M5CPHAE;
+					};
 					510C910F18DB6B0E00AEDDE4 = {
 						TestTargetID = 510C90EE18DB6B0E00AEDDE4;
 					};
@@ -361,6 +369,7 @@
 				0A96463519118DF0006CF535 /* RHUIImageResizing.m in Sources */,
 				51EBB71F18FCAE1200524084 /* RHMasterTableViewController.m in Sources */,
 				510C910918DB6B0E00AEDDE4 /* RHViewController.m in Sources */,
+				5154790E1923F02000ADF090 /* RHLoginViewController.m in Sources */,
 				51569D311916BE4000CD05BF /* RHCategory.m in Sources */,
 				512A138D18FC66CA008DEE7D /* Parser.m in Sources */,
 			);
@@ -487,11 +496,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -502,11 +514,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
 				INFOPLIST_FILE = "RosePerksTest/RosePerksTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

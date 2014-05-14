@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1r7-8q-G8I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1r7-8q-G8I">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Rose Perks-->
+        <!--Login View Controller - Rose Perks-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="RHViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RHLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -29,7 +29,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="RoseStemButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vfu-Mf-3fn"/>
+                                    <action selector="RoseStemButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QXe-xT-eMG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-J1-IMc">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="LoginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pUq-TO-ZGB"/>
+                                    <action selector="LoginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ipg-c8-gWU"/>
                                     <segue destination="WsS-nN-ASa" kind="push" id="Mnv-Fp-mZG"/>
                                 </connections>
                             </button>
@@ -67,8 +67,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Rose Perks" id="7QS-0v-Oju"/>
                     <connections>
-                        <outlet property="EmailTextField" destination="hZD-AJ-Cqh" id="tBd-9Q-WPh"/>
-                        <outlet property="PasswordTextField" destination="hw9-yr-sde" id="ATN-uP-rAO"/>
+                        <outlet property="EmailTextField" destination="hZD-AJ-Cqh" id="cuo-W5-Ly2"/>
+                        <outlet property="PasswordTextField" destination="hw9-yr-sde" id="C5e-VD-8kl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

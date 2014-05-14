@@ -10,8 +10,6 @@
 #import "RHCategory.h"
 
 @interface RHViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *EmailTextField;
-@property (weak, nonatomic) IBOutlet UITextField *PasswordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *GoogleMapButton;
 - (IBAction)PerksListButton:(id)sender;
 
