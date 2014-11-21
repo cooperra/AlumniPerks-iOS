@@ -35,7 +35,7 @@
 }
 
 - (IBAction)LoginButton:(id)sender {
-    if ([self.PasswordTextField.text isEqualToString:@"hello"]){
+    if ([self.PasswordTextField.text isEqualToString:@"foreverrose"]){
         NSLog(@"YES!");
         {
             RHLoginViewController *LoginView = [self.storyboard instantiateViewControllerWithIdentifier:@"View"];
