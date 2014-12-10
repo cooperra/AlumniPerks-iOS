@@ -27,11 +27,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
+    NSString *compID = [NSString stringWithFormat:@"%ld",(long)theList.CompanyID];
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
     //imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
-    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    //imageName = [NSString stringWithFormat:@"/Users/susanhatcher/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

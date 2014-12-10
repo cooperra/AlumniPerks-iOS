@@ -26,7 +26,7 @@
     if([data length] == 0){
         self.offline = true;
         NSString *path = @"PerksList.xml";
-        //path = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", path];
+        //path = [NSString stringWithFormat:@"/Users/susanhatcher/Desktop/%@", path];
         NSString *standardizedPath = [path stringByStandardizingPath];
         data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
         if([data length] == 0){
@@ -47,7 +47,7 @@
 //    NSString *standardizedPath = [path stringByStandardizingPath];
     // standardizedPath: /usr/include
     
-    //NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/Users/csse/Desktop/PerksList.xml"];
+    //NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/Users/susanhatcher/Desktop/PerksList.xml"];
 //    NSData *data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
 //    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
@@ -56,7 +56,7 @@
     
     BOOL worked = [xmlParser parse];
     if(worked) {
-        NSLog(@"Amount %i",[ListArray count]);
+        NSLog(@"Amount %lu",(unsigned long)[ListArray count]);
     }
     else{
         NSLog(@"boo");
@@ -70,8 +70,8 @@
     if(!self.offline){
         for(int i = 0; i < [ListArray count]; i++){
             temp = (List*) ListArray[i];
-            NSLog(@"%d", temp.CompanyID);
-            numID =[NSString stringWithFormat:@"%d%@", temp.CompanyID, @".jpg"];
+            NSLog(@"%ld", (long)temp.CompanyID);
+            numID =[NSString stringWithFormat:@"%ld%@", (long)temp.CompanyID, @".jpg"];
             midString = [NSString stringWithFormat:@"http://alumniperks.csse.rose-hulman.edu/images/%@", numID];
             url = [[NSURL alloc]initWithString:midString];
             data2 = [[NSData alloc]initWithContentsOfURL:url];
@@ -82,7 +82,7 @@
             numID = [documentsPath stringByAppendingPathComponent:numID];
             
             //numID = [NSHomeDirectory() stringByAppendingPathComponent:numID];
-            //numID = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", numID];
+            //numID = [NSString stringWithFormat:@"/Users/susanhatcher/Desktop/%@", numID];
             [UIImageJPEGRepresentation(tempImage, 1.0) writeToFile:numID atomically:YES];
             //[data2 writeToFile:@"numID" atomically:true];
         }

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A903FAF1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */; };
-		0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */; };
-		0A9511A018FF947500876157 /* RHMasterTableViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 51EBB71D18FCAE1200524084 /* RHMasterTableViewController.h */; };
 		0A96463519118DF0006CF535 /* RHUIImageResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96463419118DF0006CF535 /* RHUIImageResizing.m */; };
 		510C90F318DB6B0E00AEDDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F218DB6B0E00AEDDE4 /* Foundation.framework */; };
 		510C90F518DB6B0E00AEDDE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F418DB6B0E00AEDDE4 /* CoreGraphics.framework */; };
@@ -20,11 +18,6 @@
 		510C910618DB6B0E00AEDDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510C910418DB6B0E00AEDDE4 /* Main.storyboard */; };
 		510C910918DB6B0E00AEDDE4 /* RHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C910818DB6B0E00AEDDE4 /* RHViewController.m */; };
 		510C910B18DB6B0E00AEDDE4 /* Rose Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C910A18DB6B0E00AEDDE4 /* Rose Logo.jpg */; };
-		510C911218DB6B0E00AEDDE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C911118DB6B0E00AEDDE4 /* XCTest.framework */; };
-		510C911318DB6B0E00AEDDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F218DB6B0E00AEDDE4 /* Foundation.framework */; };
-		510C911418DB6B0E00AEDDE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C90F618DB6B0E00AEDDE4 /* UIKit.framework */; };
-		510C911C18DB6B0E00AEDDE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 510C911A18DB6B0E00AEDDE4 /* InfoPlist.strings */; };
-		510C911E18DB6B0E00AEDDE4 /* RosePerks.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C911D18DB6B0E00AEDDE4 /* RosePerks.m */; };
 		510C912818DB763600AEDDE4 /* imgres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C912718DB763600AEDDE4 /* imgres.jpg */; };
 		510C912A18DB7DE800AEDDE4 /* background_not_complete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510C912918DB7DE800AEDDE4 /* background_not_complete.jpg */; };
 		512A138A18FC6508008DEE7D /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A138918FC6508008DEE7D /* List.m */; };
@@ -53,20 +46,9 @@
 		51BE329518DBCC5800C4678E /* 128520-simple-red-square-icon-business-cart-7dots.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BE328F18DBCC5800C4678E /* 128520-simple-red-square-icon-business-cart-7dots.png */; };
 		51BE329618DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BE329018DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png */; };
 		51BE329718DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BE329118DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png */; };
-		51EBB71F18FCAE1200524084 /* RHMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */; };
 		51EBB72218FCAF6E00524084 /* RHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EBB72118FCAF6E00524084 /* RHDetailViewController.m */; };
-		51F817841924133600594F16 /* Rose Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F817831924133600594F16 /* Rose Logo.jpg */; };
+		E451E3A41A1FFBEA00D7E46E /* RHMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E451E3A31A1FFBEA00D7E46E /* RHMasterTableViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		510C911518DB6B0E00AEDDE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 510C90E718DB6B0E00AEDDE4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 510C90EE18DB6B0E00AEDDE4;
-			remoteInfo = RosePerksTest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A903FAE1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png"; sourceTree = "<group>"; };
@@ -86,11 +68,7 @@
 		510C910718DB6B0E00AEDDE4 /* RHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHViewController.h; sourceTree = "<group>"; };
 		510C910818DB6B0E00AEDDE4 /* RHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHViewController.m; sourceTree = "<group>"; };
 		510C910A18DB6B0E00AEDDE4 /* Rose Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rose Logo.jpg"; sourceTree = "<group>"; };
-		510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHPerksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		510C911118DB6B0E00AEDDE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		510C911918DB6B0E00AEDDE4 /* RHPerks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RHPerks-Info.plist"; sourceTree = "<group>"; };
-		510C911B18DB6B0E00AEDDE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		510C911D18DB6B0E00AEDDE4 /* RosePerks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosePerks.m; sourceTree = "<group>"; };
 		510C912718DB763600AEDDE4 /* imgres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgres.jpg; sourceTree = "<group>"; };
 		510C912918DB7DE800AEDDE4 /* background_not_complete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_not_complete.jpg; sourceTree = "<group>"; };
 		512A138818FC6508008DEE7D /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
@@ -125,11 +103,11 @@
 		51BE328F18DBCC5800C4678E /* 128520-simple-red-square-icon-business-cart-7dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "128520-simple-red-square-icon-business-cart-7dots.png"; sourceTree = "<group>"; };
 		51BE329018DBCC5800C4678E /* 128579-simple-red-square-icon-business-dollar-solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "128579-simple-red-square-icon-business-dollar-solid.png"; sourceTree = "<group>"; };
 		51BE329118DBCC5800C4678E /* 129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129045-simple-red-square-icon-food-beverage-drink-glass5-sc48.png"; sourceTree = "<group>"; };
-		51EBB71D18FCAE1200524084 /* RHMasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHMasterTableViewController.h; sourceTree = "<group>"; };
-		51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHMasterTableViewController.m; sourceTree = "<group>"; };
 		51EBB72018FCAF6E00524084 /* RHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHDetailViewController.h; sourceTree = "<group>"; };
 		51EBB72118FCAF6E00524084 /* RHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHDetailViewController.m; sourceTree = "<group>"; };
 		51F817831924133600594F16 /* Rose Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rose Logo.jpg"; sourceTree = "<group>"; };
+		E451E3A21A1FFBEA00D7E46E /* RHMasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHMasterTableViewController.h; sourceTree = "<group>"; };
+		E451E3A31A1FFBEA00D7E46E /* RHMasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHMasterTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,16 +121,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		510C910D18DB6B0E00AEDDE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				510C911218DB6B0E00AEDDE4 /* XCTest.framework in Frameworks */,
-				510C911418DB6B0E00AEDDE4 /* UIKit.framework in Frameworks */,
-				510C911318DB6B0E00AEDDE4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -161,7 +129,6 @@
 			children = (
 				5180C4401924315A00C19404 /* Images.xcassets */,
 				510C90F818DB6B0E00AEDDE4 /* RosePerksTest */,
-				510C911718DB6B0E00AEDDE4 /* RosePerksTestTests */,
 				510C90F118DB6B0E00AEDDE4 /* Frameworks */,
 				510C90F018DB6B0E00AEDDE4 /* Products */,
 			);
@@ -171,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				510C90EF18DB6B0E00AEDDE4 /* RHPerks.app */,
-				510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,11 +171,11 @@
 				512A138818FC6508008DEE7D /* List.h */,
 				512A138918FC6508008DEE7D /* List.m */,
 				512A138B18FC66CA008DEE7D /* Parser.h */,
+				E451E3A21A1FFBEA00D7E46E /* RHMasterTableViewController.h */,
+				E451E3A31A1FFBEA00D7E46E /* RHMasterTableViewController.m */,
 				512A138C18FC66CA008DEE7D /* Parser.m */,
 				0A96463319118DF0006CF535 /* RHUIImageResizing.h */,
 				0A96463419118DF0006CF535 /* RHUIImageResizing.m */,
-				51EBB71D18FCAE1200524084 /* RHMasterTableViewController.h */,
-				51EBB71E18FCAE1200524084 /* RHMasterTableViewController.m */,
 				51EBB72018FCAF6E00524084 /* RHDetailViewController.h */,
 				51EBB72118FCAF6E00524084 /* RHDetailViewController.m */,
 				51BE328B18DBC4A900C4678E /* images */,
@@ -226,24 +192,6 @@
 				510C90FB18DB6B0E00AEDDE4 /* InfoPlist.strings */,
 				510C90FE18DB6B0E00AEDDE4 /* main.m */,
 				510C910018DB6B0E00AEDDE4 /* RHPerks-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		510C911718DB6B0E00AEDDE4 /* RosePerksTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				510C911D18DB6B0E00AEDDE4 /* RosePerks.m */,
-				510C911818DB6B0E00AEDDE4 /* Supporting Files */,
-			);
-			path = RosePerksTestTests;
-			sourceTree = "<group>";
-		};
-		510C911818DB6B0E00AEDDE4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				510C911918DB6B0E00AEDDE4 /* RHPerks-Info.plist */,
-				510C911A18DB6B0E00AEDDE4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -299,24 +247,6 @@
 			productReference = 510C90EF18DB6B0E00AEDDE4 /* RHPerks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		510C910F18DB6B0E00AEDDE4 /* RHPerksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerksTests" */;
-			buildPhases = (
-				510C910C18DB6B0E00AEDDE4 /* Sources */,
-				510C910D18DB6B0E00AEDDE4 /* Frameworks */,
-				510C910E18DB6B0E00AEDDE4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				510C911618DB6B0E00AEDDE4 /* PBXTargetDependency */,
-			);
-			name = RHPerksTests;
-			productName = RosePerksTestTests;
-			productReference = 510C911018DB6B0E00AEDDE4 /* RHPerksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RH;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Rose-Hulman";
 				TargetAttributes = {
 					510C90EE18DB6B0E00AEDDE4 = {
@@ -337,9 +267,6 @@
 								enabled = 0;
 							};
 						};
-					};
-					510C910F18DB6B0E00AEDDE4 = {
-						TestTargetID = 510C90EE18DB6B0E00AEDDE4;
 					};
 				};
 			};
@@ -357,7 +284,6 @@
 			projectRoot = "";
 			targets = (
 				510C90EE18DB6B0E00AEDDE4 /* RHPerks */,
-				510C910F18DB6B0E00AEDDE4 /* RHPerksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -367,8 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A9511A018FF947500876157 /* RHMasterTableViewController.h in Resources */,
-				0A95119F18FF946D00876157 /* RHMasterTableViewController.m in Resources */,
 				51BE329418DBCC5800C4678E /* 129867-simple-red-square-icon-symbols-shapes-comment-bubbles.png in Resources */,
 				51569D2B1916BB4500CD05BF /* category_129921_simple_red_square_icon_symbols_shapes_spinner1 (1).png in Resources */,
 				51358FC319241495006A3D2E /* apple-touch-icon-72x72.png in Resources */,
@@ -393,18 +317,9 @@
 				510C910618DB6B0E00AEDDE4 /* Main.storyboard in Resources */,
 				51BE328818DBC4A000C4678E /* Official Rose-Hulman Res-13.jpg in Resources */,
 				51358FC219241495006A3D2E /* apple-touch-icon-57x57.png in Resources */,
-				51F817841924133600594F16 /* Rose Logo.jpg in Resources */,
 				51358FCA19241495006A3D2E /* favicon.ico in Resources */,
 				51358FC419241495006A3D2E /* apple-touch-icon-76x76.png in Resources */,
 				0A903FAF1923E6C8007202AE /* 129999-simple-red-square-icon-transport-travel-transportation-car9-sc44.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		510C910E18DB6B0E00AEDDE4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				510C911C18DB6B0E00AEDDE4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,31 +336,15 @@
 				512A138A18FC6508008DEE7D /* List.m in Sources */,
 				510C90FF18DB6B0E00AEDDE4 /* main.m in Sources */,
 				0A96463519118DF0006CF535 /* RHUIImageResizing.m in Sources */,
-				51EBB71F18FCAE1200524084 /* RHMasterTableViewController.m in Sources */,
 				510C910918DB6B0E00AEDDE4 /* RHViewController.m in Sources */,
 				5154790E1923F02000ADF090 /* RHLoginViewController.m in Sources */,
 				51569D311916BE4000CD05BF /* RHCategory.m in Sources */,
+				E451E3A41A1FFBEA00D7E46E /* RHMasterTableViewController.m in Sources */,
 				512A138D18FC66CA008DEE7D /* Parser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		510C910C18DB6B0E00AEDDE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				510C911E18DB6B0E00AEDDE4 /* RosePerks.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		510C911618DB6B0E00AEDDE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 510C90EE18DB6B0E00AEDDE4 /* RHPerks */;
-			targetProxy = 510C911518DB6B0E00AEDDE4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		510C90FB18DB6B0E00AEDDE4 /* InfoPlist.strings */ = {
@@ -462,14 +361,6 @@
 				510C910518DB6B0E00AEDDE4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		510C911A18DB6B0E00AEDDE4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				510C911B18DB6B0E00AEDDE4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -581,46 +472,6 @@
 			};
 			name = Release;
 		};
-		510C912518DB6B0E00AEDDE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RosePerksTest.app/RosePerksTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RosePerksTestTests/RHPerksTests-Info.plist";
-				PRODUCT_NAME = RHPerksTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		510C912618DB6B0E00AEDDE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RosePerksTest.app/RosePerksTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RosePerksTest/RosePerksTest-Prefix.pch";
-				INFOPLIST_FILE = "RosePerksTestTests/RHPerksTests-Info.plist";
-				PRODUCT_NAME = RHPerksTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,7 +482,7 @@
 				510C912018DB6B0E00AEDDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		510C912118DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerks" */ = {
 			isa = XCConfigurationList;
@@ -640,16 +491,7 @@
 				510C912318DB6B0E00AEDDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		510C912418DB6B0E00AEDDE4 /* Build configuration list for PBXNativeTarget "RHPerksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				510C912518DB6B0E00AEDDE4 /* Debug */,
-				510C912618DB6B0E00AEDDE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

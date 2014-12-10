@@ -94,7 +94,7 @@
             }
         }
         else{
-            n = [app.ListArray count];
+            n = (int)[app.ListArray count];
             break;
         }
         
@@ -124,8 +124,8 @@
     
         
         if(self.counter < [app.ListArray count]){
-            NSString *one =[ NSString stringWithFormat:@"%d", self.counter];
-            NSString *two = [NSString stringWithFormat:@"%d", self.fakeIndexPath];
+            NSString *one =[ NSString stringWithFormat:@"%lu", (unsigned long)self.counter];
+            NSString *two = [NSString stringWithFormat:@"%lu", (unsigned long)self.fakeIndexPath];
             self.indexPathMap[two] = one;
         }
         else{
@@ -139,7 +139,7 @@
    // if(counter < [app.ListArray count]){
         List* wtf =[app.ListArray objectAtIndex:counter];
         NSString *companyName =[wtf.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        NSLog(@"Grabbing new element: %d, the business: %@", counter, companyName);
+        NSLog(@"Grabbing new element: %lu, the business: %@", (unsigned long)counter, companyName);
         return wtf;
     //}
     //return nil;
@@ -217,10 +217,10 @@
      NSDictionary *arialDict = [NSDictionary dictionaryWithObject: arialFont forKey:NSFontAttributeName];        NSAttributedString *fontsDisplay = [[NSMutableAttributedString alloc] initWithString:@"" attributes: arialDict];  */
     
     
-    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+    NSString *key = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     NSString *value = self.indexPathMap[key];
     NSInteger numberValue = [value integerValue];
-    NSLog(@"\nINTERCEPTION: %d\n", numberValue);
+    NSLog(@"\nINTERCEPTION: %ld\n", (long)numberValue);
     theList = [app.ListArray objectAtIndex:numberValue];
     
     
@@ -250,7 +250,7 @@
     cell.textLabel.attributedText = aAttrString;
     //cell.textLabel.font = [UIFont systemFontOfSize:6];
     cell.textLabel.numberOfLines = 7;
-    NSString *compID = [NSString stringWithFormat:@"%d",theList.CompanyID];
+    NSString *compID = [NSString stringWithFormat:@"%ld",(long)theList.CompanyID];
     NSString *strippedImageName = [compID stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *imageName = [NSString stringWithFormat:@"%@%@", strippedImageName, @".jpg"];
 
@@ -259,7 +259,7 @@
     imageName = [documentsPath stringByAppendingPathComponent:imageName];
     
     //imageName = [NSHomeDirectory() stringByAppendingPathComponent:imageName];
-    //imageName = [NSString stringWithFormat:@"/Users/csse/Desktop/%@", imageName];
+    //imageName = [NSString stringWithFormat:@"/Users/susanhatcher/Desktop/%@", imageName];
     NSLog(@"%@\n\n\n", imageName);
     UIImage *pic = [UIImage imageWithContentsOfFile: imageName];
     UIImage* smallImage = [pic scaleToSize:CGSizeMake(70.0f,50.0f)];
@@ -317,7 +317,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RHDetailViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailView"];
-    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row];
+    NSString *key = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     NSString *value = self.indexPathMap[key];
     NSInteger numberValue = [value integerValue];
     theList = [app.ListArray objectAtIndex:numberValue];
