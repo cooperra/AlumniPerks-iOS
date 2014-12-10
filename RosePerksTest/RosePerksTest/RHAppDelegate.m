@@ -18,18 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"PerksList.xml"];
+    // Get the path to save the XML to
+    // http://stackoverflow.com/a/12833612
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docsDir = [dirPaths objectAtIndex:0];
+    NSString *xmlPath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent:@"PerksList.xml"]];
+    // End getting the path to save the XML to
 
     NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/perk_api/list_all"];
     //NSURL *urlXML = [[NSURL alloc]initWithString:@"http://alumniperks.csse.rose-hulman.edu/images"];
     NSData *data = [[NSData alloc]initWithContentsOfURL:urlXML];
     if([data length] == 0){
         self.offline = true;
-        NSString *path = @"PerksList.xml";
-        //path = [NSString stringWithFormat:@"/Users/susanhatcher/Desktop/%@", path];
-        NSString *standardizedPath = [path stringByStandardizingPath];
-        data = [[NSData alloc] initWithContentsOfFile:standardizedPath];
+        data = [[NSData alloc] initWithContentsOfFile:xmlPath];
         if([data length] == 0){
+            // First run and no internet connection
             UIAlertView* alert;
             alert = [[UIAlertView alloc] initWithTitle:@"Alert!" message:@"The Rose Hulman Alumni Perks App needs access to internet on its initial boot up to populate the perks list. After this initial population this App will perform without internet." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
             [alert show];
@@ -37,7 +43,7 @@
     }
     else{
         self.offline = false;
-        [data writeToFile:@"PerksList.xml" atomically:true];
+        [data writeToFile:xmlPath atomically:true];
     }
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:data];
     
