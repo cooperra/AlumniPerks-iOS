@@ -23,7 +23,7 @@
 
 
 - (IBAction)GoogleMapButton:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://mapsengine.google.com/map/u/0/edit?mid=zRBarr6eawLk.kMs2XUUHErnM"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.google.com/maps/d/viewer?mid=zdyo3q75qKzI.kj-j0aR-b6nU"]];
     
 }
 
